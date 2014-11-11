@@ -1,0 +1,2679 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MSFKDeviceManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MatchStick </a></h1>
+				<a id="developerHome" href="../index.html">MatchStick</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MSFKDeviceManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/appId">&nbsp;&nbsp;&nbsp;&nbsp;appId</option>
+	
+	<option value="//api/name/deviceMuted">&nbsp;&nbsp;&nbsp;&nbsp;deviceMuted</option>
+	
+	<option value="//api/name/deviceVolume">&nbsp;&nbsp;&nbsp;&nbsp;deviceVolume</option>
+	
+	<option value="//api/name/isConnected">&nbsp;&nbsp;&nbsp;&nbsp;isConnected</option>
+	
+	<option value="//api/name/isConnectedToApp">&nbsp;&nbsp;&nbsp;&nbsp;isConnectedToApp</option>
+	
+	<option value="//api/name/isReconnecting">&nbsp;&nbsp;&nbsp;&nbsp;isReconnecting</option>
+	
+	<option value="//api/name/reconnectTimeout">&nbsp;&nbsp;&nbsp;&nbsp;reconnectTimeout</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addChannel:">&nbsp;&nbsp;&nbsp;&nbsp;- addChannel:</option>
+	
+	<option value="//api/name/appDidEnterBackground:">&nbsp;&nbsp;&nbsp;&nbsp;- appDidEnterBackground:</option>
+	
+	<option value="//api/name/cancelPendingRequestsWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- cancelPendingRequestsWithError:</option>
+	
+	<option value="//api/name/connect">&nbsp;&nbsp;&nbsp;&nbsp;- connect</option>
+	
+	<option value="//api/name/connectInternalUnchecked">&nbsp;&nbsp;&nbsp;&nbsp;- connectInternalUnchecked</option>
+	
+	<option value="//api/name/connectToDeviceControl">&nbsp;&nbsp;&nbsp;&nbsp;- connectToDeviceControl</option>
+	
+	<option value="//api/name/connectWithInactivityTimeout:">&nbsp;&nbsp;&nbsp;&nbsp;- connectWithInactivityTimeout:</option>
+	
+	<option value="//api/name/dealloc">&nbsp;&nbsp;&nbsp;&nbsp;- dealloc</option>
+	
+	<option value="//api/name/deviceControl:deleteApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- deviceControl:deleteApplication:</option>
+	
+	<option value="//api/name/deviceControl:volumeDidChangeToLevel:isMuted:">&nbsp;&nbsp;&nbsp;&nbsp;- deviceControl:volumeDidChangeToLevel:isMuted:</option>
+	
+	<option value="//api/name/disconnect">&nbsp;&nbsp;&nbsp;&nbsp;- disconnect</option>
+	
+	<option value="//api/name/generateRequestID">&nbsp;&nbsp;&nbsp;&nbsp;- generateRequestID</option>
+	
+	<option value="//api/name/initWithDevice:clientPackageName:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDevice:clientPackageName:</option>
+	
+	<option value="//api/name/joinApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- joinApplication:</option>
+	
+	<option value="//api/name/launchApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- launchApplication:</option>
+	
+	<option value="//api/name/launchApplication:relaunchIfRunning:">&nbsp;&nbsp;&nbsp;&nbsp;- launchApplication:relaunchIfRunning:</option>
+	
+	<option value="//api/name/leaveApplication">&nbsp;&nbsp;&nbsp;&nbsp;- leaveApplication</option>
+	
+	<option value="//api/name/notifyDidConnectToApplication:launchedApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyDidConnectToApplication:launchedApplication:</option>
+	
+	<option value="//api/name/notifyDidFailToConnectWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyDidFailToConnectWithError:</option>
+	
+	<option value="//api/name/notifyReconnectFailedWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyReconnectFailedWithError:</option>
+	
+	<option value="//api/name/registerForAppStateNotifications">&nbsp;&nbsp;&nbsp;&nbsp;- registerForAppStateNotifications</option>
+	
+	<option value="//api/name/removeChannel:">&nbsp;&nbsp;&nbsp;&nbsp;- removeChannel:</option>
+	
+	<option value="//api/name/requestDeviceStatus">&nbsp;&nbsp;&nbsp;&nbsp;- requestDeviceStatus</option>
+	
+	<option value="//api/name/sendBinaryMessage:withNamespace:">&nbsp;&nbsp;&nbsp;&nbsp;- sendBinaryMessage:withNamespace:</option>
+	
+	<option value="//api/name/sendBinaryMessage:withNamespace:toDestinationID:">&nbsp;&nbsp;&nbsp;&nbsp;- sendBinaryMessage:withNamespace:toDestinationID:</option>
+	
+	<option value="//api/name/sendTextMessage:withNamespace:">&nbsp;&nbsp;&nbsp;&nbsp;- sendTextMessage:withNamespace:</option>
+	
+	<option value="//api/name/sendTextMessage:withNamespace:toDestinationID:">&nbsp;&nbsp;&nbsp;&nbsp;- sendTextMessage:withNamespace:toDestinationID:</option>
+	
+	<option value="//api/name/setMuted:">&nbsp;&nbsp;&nbsp;&nbsp;- setMuted:</option>
+	
+	<option value="//api/name/setVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- setVolume:</option>
+	
+	<option value="//api/name/stopApplication">&nbsp;&nbsp;&nbsp;&nbsp;- stopApplication</option>
+	
+	<option value="//api/name/stopApplicationWithSessionID:">&nbsp;&nbsp;&nbsp;&nbsp;- stopApplicationWithSessionID:</option>
+	
+	<option value="//api/name/webSocketDidOpen:">&nbsp;&nbsp;&nbsp;&nbsp;- webSocketDidOpen:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appId">appId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceMuted">deviceMuted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceVolume">deviceVolume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isConnected">isConnected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isConnectedToApp">isConnectedToApp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReconnecting">isReconnecting</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reconnectTimeout">reconnectTimeout</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addChannel:">addChannel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appDidEnterBackground:">appDidEnterBackground:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelPendingRequestsWithError:">cancelPendingRequestsWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connect">connect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectInternalUnchecked">connectInternalUnchecked</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectToDeviceControl">connectToDeviceControl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectWithInactivityTimeout:">connectWithInactivityTimeout:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dealloc">dealloc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceControl:deleteApplication:">deviceControl:deleteApplication:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceControl:volumeDidChangeToLevel:isMuted:">deviceControl:volumeDidChangeToLevel:isMuted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnect">disconnect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateRequestID">generateRequestID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDevice:clientPackageName:">initWithDevice:clientPackageName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joinApplication:">joinApplication:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/launchApplication:">launchApplication:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/launchApplication:relaunchIfRunning:">launchApplication:relaunchIfRunning:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leaveApplication">leaveApplication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyDidConnectToApplication:launchedApplication:">notifyDidConnectToApplication:launchedApplication:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyDidFailToConnectWithError:">notifyDidFailToConnectWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyReconnectFailedWithError:">notifyReconnectFailedWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerForAppStateNotifications">registerForAppStateNotifications</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeChannel:">removeChannel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestDeviceStatus">requestDeviceStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendBinaryMessage:withNamespace:">sendBinaryMessage:withNamespace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendBinaryMessage:withNamespace:toDestinationID:">sendBinaryMessage:withNamespace:toDestinationID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendTextMessage:withNamespace:">sendTextMessage:withNamespace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendTextMessage:withNamespace:toDestinationID:">sendTextMessage:withNamespace:toDestinationID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMuted:">setMuted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setVolume:">setVolume:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopApplication">stopApplication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopApplicationWithSessionID:">stopApplicationWithSessionID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webSocketDidOpen:">webSocketDidOpen:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MSFKDeviceManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MSFKDeviceManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MSFKDeviceManager.h<br />MSFKDeviceManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isConnected">&nbsp;&nbsp;isConnected</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isConnectedToApp">&nbsp;&nbsp;isConnectedToApp</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReconnecting">&nbsp;&nbsp;isReconnecting</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reconnectTimeout">&nbsp;&nbsp;reconnectTimeout</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceVolume">&nbsp;&nbsp;deviceVolume</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceMuted">&nbsp;&nbsp;deviceMuted</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appId">&nbsp;&nbsp;appId</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDevice:clientPackageName:">&ndash;&nbsp;initWithDevice:clientPackageName:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connect">&ndash;&nbsp;connect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnect">&ndash;&nbsp;disconnect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addChannel:">&ndash;&nbsp;addChannel:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeChannel:">&ndash;&nbsp;removeChannel:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendBinaryMessage:withNamespace:">&ndash;&nbsp;sendBinaryMessage:withNamespace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendBinaryMessage:withNamespace:toDestinationID:">&ndash;&nbsp;sendBinaryMessage:withNamespace:toDestinationID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendTextMessage:withNamespace:">&ndash;&nbsp;sendTextMessage:withNamespace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendTextMessage:withNamespace:toDestinationID:">&ndash;&nbsp;sendTextMessage:withNamespace:toDestinationID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/launchApplication:">&ndash;&nbsp;launchApplication:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/launchApplication:relaunchIfRunning:">&ndash;&nbsp;launchApplication:relaunchIfRunning:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joinApplication:">&ndash;&nbsp;joinApplication:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leaveApplication">&ndash;&nbsp;leaveApplication</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopApplication">&ndash;&nbsp;stopApplication</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setVolume:">&ndash;&nbsp;setVolume:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMuted:">&ndash;&nbsp;setMuted:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestDeviceStatus">&ndash;&nbsp;requestDeviceStatus</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dealloc">&ndash;&nbsp;dealloc</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerForAppStateNotifications">&ndash;&nbsp;registerForAppStateNotifications</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectWithInactivityTimeout:">&ndash;&nbsp;connectWithInactivityTimeout:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectInternalUnchecked">&ndash;&nbsp;connectInternalUnchecked</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appDidEnterBackground:">&ndash;&nbsp;appDidEnterBackground:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopApplicationWithSessionID:">&ndash;&nbsp;stopApplicationWithSessionID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateRequestID">&ndash;&nbsp;generateRequestID</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectToDeviceControl">&ndash;&nbsp;connectToDeviceControl</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifyReconnectFailedWithError:">&ndash;&nbsp;notifyReconnectFailedWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifyDidFailToConnectWithError:">&ndash;&nbsp;notifyDidFailToConnectWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelPendingRequestsWithError:">&ndash;&nbsp;cancelPendingRequestsWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceControl:deleteApplication:">&ndash;&nbsp;deviceControl:deleteApplication:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceControl:volumeDidChangeToLevel:isMuted:">&ndash;&nbsp;deviceControl:volumeDidChangeToLevel:isMuted:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifyDidConnectToApplication:launchedApplication:">&ndash;&nbsp;notifyDidConnectToApplication:launchedApplication:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webSocketDidOpen:">&ndash;&nbsp;webSocketDidOpen:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/appId" title="appId"></a>
+	<h3 class="subsubtitle method-title">appId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The application id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *appId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The application id.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceMuted" title="deviceMuted"></a>
+	<h3 class="subsubtitle method-title">deviceMuted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current mute state of the device, if known; otherwise <code>NO</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL deviceMuted</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current mute state of the device, if known; otherwise <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceVolume" title="deviceVolume"></a>
+	<h3 class="subsubtitle method-title">deviceVolume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current volume of the device, if known; otherwise <code>0</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) float deviceVolume</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current volume of the device, if known; otherwise <code>0</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isConnected" title="isConnected"></a>
+	<h3 class="subsubtitle method-title">isConnected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True if the <a href="#//api/name/device">device</a> manager has established a connection to the <a href="#//api/name/device">device</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isConnected</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>True if the <a href="#//api/name/device">device</a> manager has established a connection to the <a href="#//api/name/device">device</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isConnectedToApp" title="isConnectedToApp"></a>
+	<h3 class="subsubtitle method-title">isConnectedToApp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True if the <a href="#//api/name/device">device</a> manager has established a connection to an application on the <a href="#//api/name/device">device</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isConnectedToApp</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>True if the <a href="#//api/name/device">device</a> manager has established a connection to an application on the <a href="#//api/name/device">device</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isReconnecting" title="isReconnecting"></a>
+	<h3 class="subsubtitle method-title">isReconnecting</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True if the <a href="#//api/name/device">device</a> manager is disconnected due to a potentially transient event (e.g. the app is
+backgrounded, or there was a network error which might be solved by reconnecting). Note that the
+disconnection/connection callbacks will not be called while the <a href="#//api/name/device">device</a> manager attemps to
+re<a href="#//api/name/connect">connect</a> after a potentially transient event, but the properties will always reflect the
+actual current state and can be observed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReconnecting</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>True if the <a href="#//api/name/device">device</a> manager is disconnected due to a potentially transient event (e.g. the app is
+backgrounded, or there was a network error which might be solved by reconnecting). Note that the
+disconnection/connection callbacks will not be called while the <a href="#//api/name/device">device</a> manager attemps to
+re<a href="#//api/name/connect">connect</a> after a potentially transient event, but the properties will always reflect the
+actual current state and can be observed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reconnectTimeout" title="reconnectTimeout"></a>
+	<h3 class="subsubtitle method-title">reconnectTimeout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reconnection will be attempted for this long in the event that the socket disconnects with a
+potentially transient error.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval reconnectTimeout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reconnection will be attempted for this long in the event that the socket disconnects with a
+potentially transient error.</p>
+
+<p>The default timeout is 10s.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addChannel:" title="addChannel:"></a>
+	<h3 class="subsubtitle method-title">addChannel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a channel which can send and receive messages for this device on a particular
+namespace.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addChannel:(MSFKFlingChannel *)<em>channel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channel</em></dt>
+			<dd><p>The channel.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the channel was added, NO if it was not added because there was already
+a channel attached for that namespace.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a channel which can send and receive messages for this device on a particular
+namespace.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appDidEnterBackground:" title="appDidEnterBackground:"></a>
+	<h3 class="subsubtitle method-title">appDidEnterBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)appDidEnterBackground:(NSNotification *)<em>notif</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelPendingRequestsWithError:" title="cancelPendingRequestsWithError:"></a>
+	<h3 class="subsubtitle method-title">cancelPendingRequestsWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/    }</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)cancelPendingRequestsWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/    }</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connect" title="connect"></a>
+	<h3 class="subsubtitle method-title">connect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Connects to the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Connects to the device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectInternalUnchecked" title="connectInternalUnchecked"></a>
+	<h3 class="subsubtitle method-title">connectInternalUnchecked</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectInternalUnchecked</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectToDeviceControl" title="connectToDeviceControl"></a>
+	<h3 class="subsubtitle method-title">connectToDeviceControl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectToDeviceControl</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectWithInactivityTimeout:" title="connectWithInactivityTimeout:"></a>
+	<h3 class="subsubtitle method-title">connectWithInactivityTimeout:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectWithInactivityTimeout:(NSTimeInterval)<em>timeout</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dealloc" title="dealloc"></a>
+	<h3 class="subsubtitle method-title">dealloc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dealloc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceControl:deleteApplication:" title="deviceControl:deleteApplication:"></a>
+	<h3 class="subsubtitle method-title">deviceControl:deleteApplication:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/    if (self-><em>applicationIDToJoin != nil) {
+/
+/        NSString *applicationIDToJoin = self-></em>applicationIDToJoin;
+/        NSString <em>sessionIDToJoin = self-><em>sessionIDToJoin;
+/        BOOL shouldLaunchIfJoinFails = self-></em>shouldLaunchIfJoinFails;
+/
+/        [self clearJoinState];
+/
+/        BOOL sameApp = YES;
+/        if (![applicationIDToJoin isEqualToString:applicationMetadata.applicationID]) {
+/            if (applicationMetadata.applicationID != nil) {
+/                sameApp = ![applicationMetadata.applicationID isEqualToString:@&ldquo;&rdquo;];
+/            } else {
+/                sameApp = NO;
+/            }
+/        }
+/
+/        if ((((uint8_t) sameApp) ^ 1) || ![sessionIDToJoin isEqualToString:applicationMetadata.sessionID]) {
+/            [[GCKLogger sharedInstance]
+/                    logFromFunction:<em>cmd
+/                            message:@&ldquo;Application to join (%@, session %@) is NOT available&rdquo;,
+/                                    applicationIDToJoin,
+/                                    sessionIDToJoin];
+/            if (shouldLaunchIfJoinFails) {
+/                [self launchApplication:applicationIDToJoin
+/                      relaunchIfRunning:YES];
+/            } else {
+/                [self notifyDidFailToConnectToAppWithError:[[GCKError alloc] initWithCode:8]];
+/            }
+/        } else {
+/            [[GCKLogger sharedInstance]
+/                    logFromFunction:</em>cmd
+/                            message:@&ldquo;Application to join (%@) is available&rdquo;,
+/                                    applicationIDToJoin];
+/            [self connectAndNotifyDidConnectToApplication:applicationMetadata
+/                                      launchedApplication:NO];
+/        }
+/        return;
+/    }
+/
+/    if (self-><em>currentAppTransportID != nil) {
+/        if (!receiverControlChannel.isLaunchingApplication) {
+/            if (![applicationMetadata.transportID isEqualToString:self-></em>currentAppTransportID]) {
+/                [[GCKLogger sharedInstance] logFromFunction:_cmd
+/                                                    message:@&ldquo;Application is no longer running&rdquo;];
+/                NSError </em>error = nil;
+/
+/                if (!self-><em>isStoppingApp) {
+/                    error = [[GCKError alloc] initWithCode:8];
+/                }
+/
+/                [self clearStopState];
+/                [self disconnectFromApplicationAndNotifyWithError:error];
+/                return;
+/            }
+/        }
+/    }
+/
+/    if ([applicationMetadata.transportID isEqualToString:self-></em>currentAppTransportID]) {
+/        if (self.delegate != nil) {
+/            if ([self.delegate respondsToSelector:@selector(deviceManager:didReceiveStatusForApplication:)]) {
+/                [self.delegate deviceManager:self didReceiveStatusForApplication:applicationMetadata];
+/            }
+/        }
+/    }</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deviceControl:(MSFKDeviceConnectControl *)<em>deviceConnectControl</em> deleteApplication:(BOOL)<em>deleteApplcation</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/    if (self-><em>applicationIDToJoin != nil) {
+/
+/        NSString *applicationIDToJoin = self-></em>applicationIDToJoin;
+/        NSString <em>sessionIDToJoin = self-><em>sessionIDToJoin;
+/        BOOL shouldLaunchIfJoinFails = self-></em>shouldLaunchIfJoinFails;
+/
+/        [self clearJoinState];
+/
+/        BOOL sameApp = YES;
+/        if (![applicationIDToJoin isEqualToString:applicationMetadata.applicationID]) {
+/            if (applicationMetadata.applicationID != nil) {
+/                sameApp = ![applicationMetadata.applicationID isEqualToString:@&ldquo;&rdquo;];
+/            } else {
+/                sameApp = NO;
+/            }
+/        }
+/
+/        if ((((uint8_t) sameApp) ^ 1) || ![sessionIDToJoin isEqualToString:applicationMetadata.sessionID]) {
+/            [[GCKLogger sharedInstance]
+/                    logFromFunction:<em>cmd
+/                            message:@&ldquo;Application to join (%@, session %@) is NOT available&rdquo;,
+/                                    applicationIDToJoin,
+/                                    sessionIDToJoin];
+/            if (shouldLaunchIfJoinFails) {
+/                [self launchApplication:applicationIDToJoin
+/                      relaunchIfRunning:YES];
+/            } else {
+/                [self notifyDidFailToConnectToAppWithError:[[GCKError alloc] initWithCode:8]];
+/            }
+/        } else {
+/            [[GCKLogger sharedInstance]
+/                    logFromFunction:</em>cmd
+/                            message:@&ldquo;Application to join (%@) is available&rdquo;,
+/                                    applicationIDToJoin];
+/            [self connectAndNotifyDidConnectToApplication:applicationMetadata
+/                                      launchedApplication:NO];
+/        }
+/        return;
+/    }
+/
+/    if (self-><em>currentAppTransportID != nil) {
+/        if (!receiverControlChannel.isLaunchingApplication) {
+/            if (![applicationMetadata.transportID isEqualToString:self-></em>currentAppTransportID]) {
+/                [[GCKLogger sharedInstance] logFromFunction:_cmd
+/                                                    message:@&ldquo;Application is no longer running&rdquo;];
+/                NSError </em>error = nil;
+/
+/                if (!self-><em>isStoppingApp) {
+/                    error = [[GCKError alloc] initWithCode:8];
+/                }
+/
+/                [self clearStopState];
+/                [self disconnectFromApplicationAndNotifyWithError:error];
+/                return;
+/            }
+/        }
+/    }
+/
+/    if ([applicationMetadata.transportID isEqualToString:self-></em>currentAppTransportID]) {
+/        if (self.delegate != nil) {
+/            if ([self.delegate respondsToSelector:@selector(deviceManager:didReceiveStatusForApplication:)]) {
+/                [self.delegate deviceManager:self didReceiveStatusForApplication:applicationMetadata];
+/            }
+/        }
+/    }</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceControl:volumeDidChangeToLevel:isMuted:" title="deviceControl:volumeDidChangeToLevel:isMuted:"></a>
+	<h3 class="subsubtitle method-title">deviceControl:volumeDidChangeToLevel:isMuted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called whenever the volume changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deviceControl:(MSFKDeviceConnectControl *)<em>deviceConnectControl</em> volumeDidChangeToLevel:(float)<em>volumeLevel</em> isMuted:(BOOL)<em>isMuted</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volumeLevel</em></dt>
+			<dd><p>The current device volume level.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isMuted</em></dt>
+			<dd><p>The current device mute state.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called whenever the volume changes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnect" title="disconnect"></a>
+	<h3 class="subsubtitle method-title">disconnect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disconnects from the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disconnect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Disconnects from the device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateRequestID" title="generateRequestID"></a>
+	<h3 class="subsubtitle method-title">generateRequestID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)generateRequestID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDevice:clientPackageName:" title="initWithDevice:clientPackageName:"></a>
+	<h3 class="subsubtitle method-title">initWithDevice:clientPackageName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer. Constructs a new MSFKDeviceManager with the given device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDevice:(MSFKDevice *)<em>device</em> clientPackageName:(NSString *)<em>clientPackageName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>The device to control.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>clientPackageName</em></dt>
+			<dd><p>The client package name.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Designated initializer. Constructs a new MSFKDeviceManager with the given device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joinApplication:" title="joinApplication:"></a>
+	<h3 class="subsubtitle method-title">joinApplication:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Joins an application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)joinApplication:(NSString *)<em>applicationID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>applicationID</em></dt>
+			<dd><p>The application ID.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Joins an application.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/launchApplication:" title="launchApplication:"></a>
+	<h3 class="subsubtitle method-title">launchApplication:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Launches an application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)launchApplication:(NSString *)<em>receiverURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>receiverURL</em></dt>
+			<dd><p>The receiver URL.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Launches an application.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/launchApplication:relaunchIfRunning:" title="launchApplication:relaunchIfRunning:"></a>
+	<h3 class="subsubtitle method-title">launchApplication:relaunchIfRunning:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Launches an application, optionally relaunching it if it is already running.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)launchApplication:(NSString *)<em>receiverURL</em> relaunchIfRunning:(BOOL)<em>relaunchIfRunning</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>receiverURL</em></dt>
+			<dd><p>The receiver URL.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>relaunchIfRunning</em></dt>
+			<dd><p>If YES, relaunches the application if it is already running instead of
+joining the running applicaiton.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Launches an application, optionally relaunching it if it is already running.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leaveApplication" title="leaveApplication"></a>
+	<h3 class="subsubtitle method-title">leaveApplication</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Leaves the current application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)leaveApplication</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Leaves the current application.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notifyDidConnectToApplication:launchedApplication:" title="notifyDidConnectToApplication:launchedApplication:"></a>
+	<h3 class="subsubtitle method-title">notifyDidConnectToApplication:launchedApplication:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/&mdash;tutu success</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)notifyDidConnectToApplication:(MSFKApplicationMetadata *)<em>applicationMetadata</em> launchedApplication:(BOOL)<em>launchedApplication</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/&mdash;tutu success</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notifyDidFailToConnectWithError:" title="notifyDidFailToConnectWithError:"></a>
+	<h3 class="subsubtitle method-title">notifyDidFailToConnectWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/    self-><em>socket.delegate = nil;
+/    self-></em>socket = nil;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)notifyDidFailToConnectWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/    self-><em>socket.delegate = nil;
+/    self-></em>socket = nil;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notifyReconnectFailedWithError:" title="notifyReconnectFailedWithError:"></a>
+	<h3 class="subsubtitle method-title">notifyReconnectFailedWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/ * 连接 ReceiverChannel
+/ * 使用连接控制通道发送 ReceiverChannel 创建消息
+/ */</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)notifyReconnectFailedWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/ * 连接 ReceiverChannel
+/ * 使用连接控制通道发送 ReceiverChannel 创建消息
+/ */</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerForAppStateNotifications" title="registerForAppStateNotifications"></a>
+	<h3 class="subsubtitle method-title">registerForAppStateNotifications</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerForAppStateNotifications</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeChannel:" title="removeChannel:"></a>
+	<h3 class="subsubtitle method-title">removeChannel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a previously added channel.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)removeChannel:(MSFKFlingChannel *)<em>channel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channel</em></dt>
+			<dd><p>The channel.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the channel was removed, NO if it was not removed because the given
+channel was not previously attached.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes a previously added channel.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestDeviceStatus" title="requestDeviceStatus"></a>
+	<h3 class="subsubtitle method-title">requestDeviceStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requests the device&rsquo;s current status. This may cause an application status callback, if
+currently connected to an application, and may cause a device volume callback, if the
+device volume has changed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)requestDeviceStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or <code>kGCKInvalidRequestID</code> if the request could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Requests the device&rsquo;s current status. This may cause an application status callback, if
+currently connected to an application, and may cause a device volume callback, if the
+device volume has changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendBinaryMessage:withNamespace:" title="sendBinaryMessage:withNamespace:"></a>
+	<h3 class="subsubtitle method-title">sendBinaryMessage:withNamespace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a binary message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sendBinaryMessage:(NSData *)<em>data</em> withNamespace:(NSString *)<em>namespace_p</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The message binary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespace_p</em></dt>
+			<dd><p>The namespace of channel</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> on success or <code>NO</code> if the message could not be sent (because
+the handler is not connected, or because the send buffer is too full at the moment).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends a binary message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendBinaryMessage:withNamespace:toDestinationID:" title="sendBinaryMessage:withNamespace:toDestinationID:"></a>
+	<h3 class="subsubtitle method-title">sendBinaryMessage:withNamespace:toDestinationID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a binary message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sendBinaryMessage:(NSData *)<em>data</em> withNamespace:(NSString *)<em>namespace_p</em> toDestinationID:(NSString *)<em>destinationID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The message binary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespace_p</em></dt>
+			<dd><p>The namespace of channel</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>destinationID</em></dt>
+			<dd><p>The destination id</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> on success or <code>NO</code> if the message could not be sent (because
+the handler is not connected, or because the send buffer is too full at the moment).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends a binary message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendTextMessage:withNamespace:" title="sendTextMessage:withNamespace:"></a>
+	<h3 class="subsubtitle method-title">sendTextMessage:withNamespace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a text message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sendTextMessage:(NSString *)<em>message</em> withNamespace:(NSString *)<em>namespace_p</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message string.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespace_p</em></dt>
+			<dd><p>The namespace of channel</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> on success or <code>NO</code> if the message could not be sent (because
+the handler is not connected, or because the send buffer is too full at the moment).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends a text message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendTextMessage:withNamespace:toDestinationID:" title="sendTextMessage:withNamespace:toDestinationID:"></a>
+	<h3 class="subsubtitle method-title">sendTextMessage:withNamespace:toDestinationID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a text message.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sendTextMessage:(NSString *)<em>message</em> withNamespace:(NSString *)<em>namespace_p</em> toDestinationID:(NSString *)<em>destinationID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message string.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespace_p</em></dt>
+			<dd><p>The namespace of channel</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>destinationID</em></dt>
+			<dd><p>The destination id</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> on success or <code>NO</code> if the message could not be sent (because
+the handler is not connected, or because the send buffer is too full at the moment).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends a text message.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMuted:" title="setMuted:"></a>
+	<h3 class="subsubtitle method-title">setMuted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Turns muting on or off.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setMuted:(BOOL)<em>muted</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>muted</em></dt>
+			<dd><p>Whether audio should be muted or unmuted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Turns muting on or off.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setVolume:" title="setVolume:"></a>
+	<h3 class="subsubtitle method-title">setVolume:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the system volume.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setVolume:(float)<em>volume</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The new volume, in the range [0.0, 1.0]. Out of range values will be silently
+clipped.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the system volume.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopApplication" title="stopApplication"></a>
+	<h3 class="subsubtitle method-title">stopApplication</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops any running application(s).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)stopApplication</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops any running application(s).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopApplicationWithSessionID:" title="stopApplicationWithSessionID:"></a>
+	<h3 class="subsubtitle method-title">stopApplicationWithSessionID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the application with the given session ID. Session ID must be non-negative.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)stopApplicationWithSessionID:(NSString *)<em>sessionID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sessionID</em></dt>
+			<dd><p>The session ID.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NO if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops the application with the given session ID. Session ID must be non-negative.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webSocketDidOpen:" title="webSocketDidOpen:"></a>
+	<h3 class="subsubtitle method-title">webSocketDidOpen:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/ * 心跳监测通道超时，主动断开连接
+/ */</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)webSocketDidOpen:(MSFKFlingWebSocket *)<em>webSocket</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/ * 心跳监测通道超时，主动断开连接
+/ */</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 MatchStick. All rights reserved. (Last updated: 2014-11-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

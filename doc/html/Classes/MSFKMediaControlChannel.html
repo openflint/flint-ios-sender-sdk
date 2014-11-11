@@ -1,0 +1,1874 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MSFKMediaControlChannel Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MatchStick </a></h1>
+				<a id="developerHome" href="../index.html">MatchStick</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MSFKMediaControlChannel Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/mediaStatus">&nbsp;&nbsp;&nbsp;&nbsp;mediaStatus</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/approximateStreamPosition">&nbsp;&nbsp;&nbsp;&nbsp;- approximateStreamPosition</option>
+	
+	<option value="//api/name/didConnect">&nbsp;&nbsp;&nbsp;&nbsp;- didConnect</option>
+	
+	<option value="//api/name/didDisconnect">&nbsp;&nbsp;&nbsp;&nbsp;- didDisconnect</option>
+	
+	<option value="//api/name/didReceiveTextMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveTextMessage:</option>
+	
+	<option value="//api/name/heartbeatChannelDidTimeout:">&nbsp;&nbsp;&nbsp;&nbsp;- heartbeatChannelDidTimeout:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/loadMedia:">&nbsp;&nbsp;&nbsp;&nbsp;- loadMedia:</option>
+	
+	<option value="//api/name/loadMedia:autoplay:">&nbsp;&nbsp;&nbsp;&nbsp;- loadMedia:autoplay:</option>
+	
+	<option value="//api/name/loadMedia:autoplay:playPosition:">&nbsp;&nbsp;&nbsp;&nbsp;- loadMedia:autoplay:playPosition:</option>
+	
+	<option value="//api/name/loadMedia:autoplay:playPosition:customData:">&nbsp;&nbsp;&nbsp;&nbsp;- loadMedia:autoplay:playPosition:customData:</option>
+	
+	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
+	
+	<option value="//api/name/pauseWithCustomData:">&nbsp;&nbsp;&nbsp;&nbsp;- pauseWithCustomData:</option>
+	
+	<option value="//api/name/play">&nbsp;&nbsp;&nbsp;&nbsp;- play</option>
+	
+	<option value="//api/name/playWithCustomData:">&nbsp;&nbsp;&nbsp;&nbsp;- playWithCustomData:</option>
+	
+	<option value="//api/name/requestStatus">&nbsp;&nbsp;&nbsp;&nbsp;- requestStatus</option>
+	
+	<option value="//api/name/seekToTimeInterval:">&nbsp;&nbsp;&nbsp;&nbsp;- seekToTimeInterval:</option>
+	
+	<option value="//api/name/seekToTimeInterval:resumeState:">&nbsp;&nbsp;&nbsp;&nbsp;- seekToTimeInterval:resumeState:</option>
+	
+	<option value="//api/name/seekToTimeInterval:resumeState:customData:">&nbsp;&nbsp;&nbsp;&nbsp;- seekToTimeInterval:resumeState:customData:</option>
+	
+	<option value="//api/name/setStreamMuted:">&nbsp;&nbsp;&nbsp;&nbsp;- setStreamMuted:</option>
+	
+	<option value="//api/name/setStreamMuted:customData:">&nbsp;&nbsp;&nbsp;&nbsp;- setStreamMuted:customData:</option>
+	
+	<option value="//api/name/setStreamVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- setStreamVolume:</option>
+	
+	<option value="//api/name/setStreamVolume:customData:">&nbsp;&nbsp;&nbsp;&nbsp;- setStreamVolume:customData:</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stopWithCustomData:">&nbsp;&nbsp;&nbsp;&nbsp;- stopWithCustomData:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaStatus">mediaStatus</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/approximateStreamPosition">approximateStreamPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didConnect">didConnect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didDisconnect">didDisconnect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveTextMessage:">didReceiveTextMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/heartbeatChannelDidTimeout:">heartbeatChannelDidTimeout:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadMedia:">loadMedia:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadMedia:autoplay:">loadMedia:autoplay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadMedia:autoplay:playPosition:">loadMedia:autoplay:playPosition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadMedia:autoplay:playPosition:customData:">loadMedia:autoplay:playPosition:customData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseWithCustomData:">pauseWithCustomData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play">play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playWithCustomData:">playWithCustomData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestStatus">requestStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/seekToTimeInterval:">seekToTimeInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/seekToTimeInterval:resumeState:">seekToTimeInterval:resumeState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/seekToTimeInterval:resumeState:customData:">seekToTimeInterval:resumeState:customData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStreamMuted:">setStreamMuted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStreamMuted:customData:">setStreamMuted:customData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStreamVolume:">setStreamVolume:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStreamVolume:customData:">setStreamVolume:customData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopWithCustomData:">stopWithCustomData:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MSFKMediaControlChannel Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MSFKMediaControlChannel Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/MSFKFlingChannel.html">MSFKFlingChannel</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MSFKMediaControlChannel.h<br />MSFKMediaControlChannel.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A FlingChannel for media control operations.</p>
+
+<p>@ingroup MediaControl</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mediaStatus">&nbsp;&nbsp;mediaStatus</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadMedia:">&ndash;&nbsp;loadMedia:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadMedia:autoplay:">&ndash;&nbsp;loadMedia:autoplay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadMedia:autoplay:playPosition:">&ndash;&nbsp;loadMedia:autoplay:playPosition:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadMedia:autoplay:playPosition:customData:">&ndash;&nbsp;loadMedia:autoplay:playPosition:customData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pauseWithCustomData:">&ndash;&nbsp;pauseWithCustomData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopWithCustomData:">&ndash;&nbsp;stopWithCustomData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playWithCustomData:">&ndash;&nbsp;playWithCustomData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/seekToTimeInterval:">&ndash;&nbsp;seekToTimeInterval:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/seekToTimeInterval:resumeState:">&ndash;&nbsp;seekToTimeInterval:resumeState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/seekToTimeInterval:resumeState:customData:">&ndash;&nbsp;seekToTimeInterval:resumeState:customData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStreamVolume:">&ndash;&nbsp;setStreamVolume:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStreamVolume:customData:">&ndash;&nbsp;setStreamVolume:customData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStreamMuted:">&ndash;&nbsp;setStreamMuted:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStreamMuted:customData:">&ndash;&nbsp;setStreamMuted:customData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestStatus">&ndash;&nbsp;requestStatus</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/approximateStreamPosition">&ndash;&nbsp;approximateStreamPosition</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReceiveTextMessage:">&ndash;&nbsp;didReceiveTextMessage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didConnect">&ndash;&nbsp;didConnect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didDisconnect">&ndash;&nbsp;didDisconnect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/heartbeatChannelDidTimeout:">&ndash;&nbsp;heartbeatChannelDidTimeout:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/mediaStatus" title="mediaStatus"></a>
+	<h3 class="subsubtitle method-title">mediaStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current media status, if any.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) MSFKMediaStatus *mediaStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current media status, if any.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/approximateStreamPosition" title="approximateStreamPosition"></a>
+	<h3 class="subsubtitle method-title">approximateStreamPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the approximate stream position as calculated from the last received stream
+information and the elapsed wall-time since that update.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSTimeInterval)approximateStreamPosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the approximate stream position as calculated from the last received stream
+information and the elapsed wall-time since that update.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didConnect" title="didConnect"></a>
+	<h3 class="subsubtitle method-title">didConnect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when this channel is added to a connected handler, or when then disconnected
+handler to which this channel has been added becomes connected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didConnect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when this channel is added to a connected handler, or when then disconnected
+handler to which this channel has been added becomes connected.</p>
+
+<p>This implementation updates isConnected, so if subclasses override this method they should
+call through to the super implementation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKFlingChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didDisconnect" title="didDisconnect"></a>
+	<h3 class="subsubtitle method-title">didDisconnect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when this channel is removed from a connected handler, or when then connected
+handler to which this channel has been added becomes disconnected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didDisconnect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when this channel is removed from a connected handler, or when then connected
+handler to which this channel has been added becomes disconnected.</p>
+
+<p>This implementation updates isConnected, so if subclasses override this method they should
+call through to the super implementation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKFlingChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReceiveTextMessage:" title="didReceiveTextMessage:"></a>
+	<h3 class="subsubtitle method-title">didReceiveTextMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a text message has been received for this channel.
+The default implementation is a no-op.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didReceiveTextMessage:(NSString *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a text message has been received for this channel.
+The default implementation is a no-op.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKFlingChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/heartbeatChannelDidTimeout:" title="heartbeatChannelDidTimeout:"></a>
+	<h3 class="subsubtitle method-title">heartbeatChannelDidTimeout:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>**</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)heartbeatChannelDidTimeout:(id)<em>nouse</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>**</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Designated initializer.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadMedia:" title="loadMedia:"></a>
+	<h3 class="subsubtitle method-title">loadMedia:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads, enqueues (at the end of the queue), and starts playback of a new media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)loadMedia:(MSFKMediaInformation *)<em>mediaInfo</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaInfo</em></dt>
+			<dd><p>An object describing the media item to load.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads, enqueues (at the end of the queue), and starts playback of a new media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadMedia:autoplay:" title="loadMedia:autoplay:"></a>
+	<h3 class="subsubtitle method-title">loadMedia:autoplay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads, enqueues (at the end of the queue), and optionally starts playback of a new media
+item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)loadMedia:(MSFKMediaInformation *)<em>mediaInfo</em> autoplay:(BOOL)<em>autoplay</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaInfo</em></dt>
+			<dd><p>An object describing the media item to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>autoplay</em></dt>
+			<dd><p>Whether playback should start immediately.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads, enqueues (at the end of the queue), and optionally starts playback of a new media
+item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadMedia:autoplay:playPosition:" title="loadMedia:autoplay:playPosition:"></a>
+	<h3 class="subsubtitle method-title">loadMedia:autoplay:playPosition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads, enqueues, and optionally starts playback of a new media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)loadMedia:(MSFKMediaInformation *)<em>mediaInfo</em> autoplay:(BOOL)<em>autoplay</em> playPosition:(NSTimeInterval)<em>playPosition</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaInfo</em></dt>
+			<dd><p>An object describing the media item to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>autoplay</em></dt>
+			<dd><p>Whether playback should start immediately.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>playPosition</em></dt>
+			<dd><p>The initial playback position.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads, enqueues, and optionally starts playback of a new media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadMedia:autoplay:playPosition:customData:" title="loadMedia:autoplay:playPosition:customData:"></a>
+	<h3 class="subsubtitle method-title">loadMedia:autoplay:playPosition:customData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads, enqueues, and optionally starts playback of a new media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)loadMedia:(MSFKMediaInformation *)<em>mediaInfo</em> autoplay:(BOOL)<em>autoplay</em> playPosition:(NSTimeInterval)<em>playPosition</em> customData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaInfo</em></dt>
+			<dd><p>An object describing the media item to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>autoplay</em></dt>
+			<dd><p>Whether playback should start immediately.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>playPosition</em></dt>
+			<dd><p>The initial playback position.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads, enqueues, and optionally starts playback of a new media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="subsubtitle method-title">pause</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses playback of the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)pause</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pauses playback of the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pauseWithCustomData:" title="pauseWithCustomData:"></a>
+	<h3 class="subsubtitle method-title">pauseWithCustomData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses playback of the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)pauseWithCustomData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pauses playback of the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="subsubtitle method-title">play</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Begins (or resumes) playback of the current media item. Playback always begins at the
+beginning of the stream. Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)play</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Begins (or resumes) playback of the current media item. Playback always begins at the
+beginning of the stream. Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playWithCustomData:" title="playWithCustomData:"></a>
+	<h3 class="subsubtitle method-title">playWithCustomData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Begins (or resumes) playback of the current media item. Playback always begins at the
+beginning of the stream. Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)playWithCustomData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Begins (or resumes) playback of the current media item. Playback always begins at the
+beginning of the stream. Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestStatus" title="requestStatus"></a>
+	<h3 class="subsubtitle method-title">requestStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requests updated media status information from the receiver.
+Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)requestStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Requests updated media status information from the receiver.
+Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/seekToTimeInterval:" title="seekToTimeInterval:"></a>
+	<h3 class="subsubtitle method-title">seekToTimeInterval:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Seeks to a new time within the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)seekToTimeInterval:(NSTimeInterval)<em>timeInterval</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>The new time interval from the beginning of the stream.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Seeks to a new time within the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/seekToTimeInterval:resumeState:" title="seekToTimeInterval:resumeState:"></a>
+	<h3 class="subsubtitle method-title">seekToTimeInterval:resumeState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Seeks to a new position within the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)seekToTimeInterval:(NSTimeInterval)<em>position</em> resumeState:(MSFKMediaControlChannelResumeState)<em>resumeState</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>The new time interval from the beginning of the stream.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resumeState</em></dt>
+			<dd><p>The action to take after the seek operation has finished.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Seeks to a new position within the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/seekToTimeInterval:resumeState:customData:" title="seekToTimeInterval:resumeState:customData:"></a>
+	<h3 class="subsubtitle method-title">seekToTimeInterval:resumeState:customData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Seeks to a new position within the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)seekToTimeInterval:(NSTimeInterval)<em>position</em> resumeState:(MSFKMediaControlChannelResumeState)<em>resumeState</em> customData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>The time interval from the beginning of the stream.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resumeState</em></dt>
+			<dd><p>The action to take after the seek operation has finished.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Seeks to a new position within the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStreamMuted:" title="setStreamMuted:"></a>
+	<h3 class="subsubtitle method-title">setStreamMuted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets whether the stream is muted. Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)setStreamMuted:(BOOL)<em>muted</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>muted</em></dt>
+			<dd><p>Whether the stream should be muted or unmuted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets whether the stream is muted. Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStreamMuted:customData:" title="setStreamMuted:customData:"></a>
+	<h3 class="subsubtitle method-title">setStreamMuted:customData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets whether the stream is muted. Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)setStreamMuted:(BOOL)<em>muted</em> customData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>muted</em></dt>
+			<dd><p>Whether the stream should be muted or unmuted.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets whether the stream is muted. Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStreamVolume:" title="setStreamVolume:"></a>
+	<h3 class="subsubtitle method-title">setStreamVolume:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the stream volume. Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)setStreamVolume:(float)<em>volume</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The new volume, in the range [0.0 - 1.0].</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the stream volume. Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStreamVolume:customData:" title="setStreamVolume:customData:"></a>
+	<h3 class="subsubtitle method-title">setStreamVolume:customData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the stream volume. Asserts if there is no current media session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)setStreamVolume:(float)<em>volume</em> customData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The new volume, in the range [0.0 - 1.0].</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the stream volume. Asserts if there is no current media session.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops playback of the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)stop</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops playback of the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopWithCustomData:" title="stopWithCustomData:"></a>
+	<h3 class="subsubtitle method-title">stopWithCustomData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops playback of the current media item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)stopWithCustomData:(id)<em>customData</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>customData</em></dt>
+			<dd><p>Custom application-specific data to pass along with the request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The request ID, or kMSFKInvalidRequestID if the message could not be sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops playback of the current media item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKMediaControlChannel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 MatchStick. All rights reserved. (Last updated: 2014-11-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
