@@ -12,7 +12,7 @@
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
 				<h1><a id="libraryTitle" href="../index.html">MatchStick </a></h1>
-				<a id="developerHome" href="../index.html">MatchStick</a>
+				<a id="developerHome" href="../index.html">MathcStick</a>
 			</div>
 			
 			<div id="title" role="banner">
@@ -36,8 +36,6 @@
 	
 	
 	<option value="properties">Properties</option>
-	
-	<option value="//api/name/appId">&nbsp;&nbsp;&nbsp;&nbsp;appId</option>
 	
 	<option value="//api/name/deviceMuted">&nbsp;&nbsp;&nbsp;&nbsp;deviceMuted</option>
 	
@@ -76,6 +74,8 @@
 	
 	<option value="//api/name/deviceControl:deleteApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- deviceControl:deleteApplication:</option>
 	
+	<option value="//api/name/deviceControl:requestDidFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- deviceControl:requestDidFailWithError:</option>
+	
 	<option value="//api/name/deviceControl:volumeDidChangeToLevel:isMuted:">&nbsp;&nbsp;&nbsp;&nbsp;- deviceControl:volumeDidChangeToLevel:isMuted:</option>
 	
 	<option value="//api/name/disconnect">&nbsp;&nbsp;&nbsp;&nbsp;- disconnect</option>
@@ -91,8 +91,6 @@
 	<option value="//api/name/launchApplication:relaunchIfRunning:">&nbsp;&nbsp;&nbsp;&nbsp;- launchApplication:relaunchIfRunning:</option>
 	
 	<option value="//api/name/leaveApplication">&nbsp;&nbsp;&nbsp;&nbsp;- leaveApplication</option>
-	
-	<option value="//api/name/notifyDidConnectToApplication:launchedApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyDidConnectToApplication:launchedApplication:</option>
 	
 	<option value="//api/name/notifyDidFailToConnectWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyDidFailToConnectWithError:</option>
 	
@@ -144,8 +142,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appId">appId</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceMuted">deviceMuted</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceVolume">deviceVolume</a></span></li>
@@ -184,6 +180,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceControl:deleteApplication:">deviceControl:deleteApplication:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceControl:requestDidFailWithError:">deviceControl:requestDidFailWithError:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceControl:volumeDidChangeToLevel:isMuted:">deviceControl:volumeDidChangeToLevel:isMuted:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnect">disconnect</a></span></li>
@@ -199,8 +197,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/launchApplication:relaunchIfRunning:">launchApplication:relaunchIfRunning:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leaveApplication">leaveApplication</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyDidConnectToApplication:launchedApplication:">notifyDidConnectToApplication:launchedApplication:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyDidFailToConnectWithError:">notifyDidFailToConnectWithError:</a></span></li>
 	
@@ -313,12 +309,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/appId">&nbsp;&nbsp;appId</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/initWithDevice:clientPackageName:">&ndash;&nbsp;initWithDevice:clientPackageName:</a></code>
 	</span>
 	
@@ -344,30 +334,6 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeChannel:">&ndash;&nbsp;removeChannel:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sendBinaryMessage:withNamespace:">&ndash;&nbsp;sendBinaryMessage:withNamespace:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sendBinaryMessage:withNamespace:toDestinationID:">&ndash;&nbsp;sendBinaryMessage:withNamespace:toDestinationID:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sendTextMessage:withNamespace:">&ndash;&nbsp;sendTextMessage:withNamespace:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sendTextMessage:withNamespace:toDestinationID:">&ndash;&nbsp;sendTextMessage:withNamespace:toDestinationID:</a></code>
 	</span>
 	
 	
@@ -465,6 +431,30 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/sendTextMessage:withNamespace:">&ndash;&nbsp;sendTextMessage:withNamespace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendTextMessage:withNamespace:toDestinationID:">&ndash;&nbsp;sendTextMessage:withNamespace:toDestinationID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendBinaryMessage:withNamespace:">&ndash;&nbsp;sendBinaryMessage:withNamespace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendBinaryMessage:withNamespace:toDestinationID:">&ndash;&nbsp;sendBinaryMessage:withNamespace:toDestinationID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/generateRequestID">&ndash;&nbsp;generateRequestID</a></code>
 	</span>
 	
@@ -507,7 +497,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/notifyDidConnectToApplication:launchedApplication:">&ndash;&nbsp;notifyDidConnectToApplication:launchedApplication:</a></code>
+		<code><a href="#//api/name/deviceControl:requestDidFailWithError:">&ndash;&nbsp;deviceControl:requestDidFailWithError:</a></code>
 	</span>
 	
 	
@@ -529,47 +519,6 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/appId" title="appId"></a>
-	<h3 class="subsubtitle method-title">appId</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The application id.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *appId</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The application id.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/deviceMuted" title="deviceMuted"></a>
@@ -1355,6 +1304,47 @@ namespace.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/deviceControl:requestDidFailWithError:" title="deviceControl:requestDidFailWithError:"></a>
+	<h3 class="subsubtitle method-title">deviceControl:requestDidFailWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>/&mdash;tutu success</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deviceControl:(MSFKDeviceConnectControl *)<em>deviceConnectControl</em> requestDidFailWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>/&mdash;tutu success</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/deviceControl:volumeDidChangeToLevel:isMuted:" title="deviceControl:volumeDidChangeToLevel:isMuted:"></a>
 	<h3 class="subsubtitle method-title">deviceControl:volumeDidChangeToLevel:isMuted:</h3>
 	
@@ -1560,7 +1550,7 @@ namespace.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)joinApplication:(NSString *)<em>applicationID</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)joinApplication:(NSString *)<em>applicationURL</em></code></div>
 
     
 	
@@ -1568,8 +1558,8 @@ namespace.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>applicationID</em></dt>
-			<dd><p>The application ID.</p></dd>
+			<dt><em>applicationURL</em></dt>
+			<dd><p>The application url.</p></dd>
 		</dl>
 		
 	</div>
@@ -1616,7 +1606,7 @@ namespace.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)launchApplication:(NSString *)<em>receiverURL</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)launchApplication:(NSString *)<em>applicationURL</em></code></div>
 
     
 	
@@ -1624,8 +1614,8 @@ namespace.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>receiverURL</em></dt>
-			<dd><p>The receiver URL.</p></dd>
+			<dt><em>applicationURL</em></dt>
+			<dd><p>The application url.</p></dd>
 		</dl>
 		
 	</div>
@@ -1672,7 +1662,7 @@ namespace.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)launchApplication:(NSString *)<em>receiverURL</em> relaunchIfRunning:(BOOL)<em>relaunchIfRunning</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)launchApplication:(NSString *)<em>applicationURL</em> relaunchIfRunning:(BOOL)<em>relaunchIfRunning</em></code></div>
 
     
 	
@@ -1680,8 +1670,8 @@ namespace.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>receiverURL</em></dt>
-			<dd><p>The receiver URL.</p></dd>
+			<dt><em>applicationURL</em></dt>
+			<dd><p>The application url.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1763,47 +1753,6 @@ joining the running applicaiton.</p></dd>
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/notifyDidConnectToApplication:launchedApplication:" title="notifyDidConnectToApplication:launchedApplication:"></a>
-	<h3 class="subsubtitle method-title">notifyDidConnectToApplication:launchedApplication:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>/&mdash;tutu success</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)notifyDidConnectToApplication:(MSFKApplicationMetadata *)<em>applicationMetadata</em> launchedApplication:(BOOL)<em>launchedApplication</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>/&mdash;tutu success</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
 	</div>				
 	
 	
@@ -2101,7 +2050,7 @@ the handler is not connected, or because the send buffer is too full at the mome
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
 	</div>				
 	
 	
@@ -2168,7 +2117,7 @@ the handler is not connected, or because the send buffer is too full at the mome
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
 	</div>				
 	
 	
@@ -2230,7 +2179,7 @@ the handler is not connected, or because the send buffer is too full at the mome
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
 	</div>				
 	
 	
@@ -2297,7 +2246,7 @@ the handler is not connected, or because the send buffer is too full at the mome
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MSFKDeviceManager.h</code><br />
+		<code class="declared-in-ref">MSFKDeviceManager.m</code><br />
 	</div>				
 	
 	
@@ -2576,7 +2525,7 @@ clipped.</p></dd>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 MatchStick. All rights reserved. (Last updated: 2014-11-15)</span><br />
+						<p><span class="copyright">&copy; 2014 MathcStick. All rights reserved. (Last updated: 2014-11-17)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
